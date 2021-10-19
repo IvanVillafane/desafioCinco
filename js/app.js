@@ -1,3 +1,27 @@
+/*Ejemplo */
+
+class Persona{
+  constructor(nombre, edad, calle) {
+    this.nombre = nombre;
+    this.edad   = edad;
+    this.calle  = calle;
+  }
+  hablar(){
+    console.log("Hola soy "+ this.nombre);
+  }
+}
+const persona1 = new Persona("Juan Paco Pedro de la Mar ", 96, "Av.Mitre 56485 ");
+persona1.hablar();
+/* 
+console.log(" Desafio con objetos");
+const persona1 ={ nombre: " Juan " ,apellido : "Perez" , edad:"25"}
+const persona2 = {nombre: "Pedro" , apellido : "De la mar" , edad:"32"
+}
+
+console.log(persona1);
+console.log(persona2);
+
+ */
 class Usuario {
   constructor( usuario, contraseña) {
     this.usuario = usuario;
