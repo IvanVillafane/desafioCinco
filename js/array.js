@@ -1,59 +1,62 @@
-/* console.log("Ejercicio simple con array y obj JS!!!")
- */
+let data = [
+    {
+        Producto:"Leon del hack",
+        Curso:"Oro ",
+        Ventas:"525",
+        Costos:"600"
+    },
+    {
+        Producto:"Lobo",
+        Curso:"plata ",
+        Ventas:"337",
+        Costos:"423"
+    },
+    {
+        Producto:"Aprendiz del hack",
+        Curso:"bronce ",
+        Ventas:"129",
+        Costos:"225"
+    },
+    {
+        Producto:"Primeros pasos del hack",
+        Curso:"cobre",
+        Ventas:"99",
+        Costos:"85"
+    }
+    
+]
 
-/* let listaCompra = ["pan","leche", "fruta","pescado"]  *//* CADENA DE TEXTO LA GUARDO EN LA VARIABLE LISTA COMPRA */
-/* let cantidades = [3,10,5,2]
-let registroEntradas = [true,true,true,true,true,false,false,,true,true] */
+console.log(data.length) /*Este me va a decir cuantas son*/ 
+console.log(data[2]) /*Posicion del 3 en este caso bronce*/
 
-/* OBJETOS */
+const resultado ={
+    list:[],
+    Lobo:{
+        "ventas":337,
+    },
+};
+let column ="Producto";
+let agrupador = "Ventas";
 
+for(let index in data){
 
-/* let cliente = {
-    nombre : "clienteUno",
-    direccion: "Copa Cabana 1974",
-    ciudad: "Oslo",
-    factura: "60000",
-    facturasPendientes:true
-} */
+const dato = data[index];
 
-
-/* COMBINACIONES -ARREGLO DE OBJETOS */
-
-let arreglo = [{},{},{}]
-
-const topTresMejoresHacker = [{
-    ranking:1,
-    nombre:" Kevin Micnick",
-    hack:11830,
-    pais:"E.e U.u"
-},{
-    ranking:2,
-    nombre:"Lamo Adrian",
-    hack:9850,
-    pais:"Estados Unidos"
-
-},
-{
-    ranking:3,
-    nombre:"Elliot Gunton",
-    hack:9125,
-    pais:"Reino Unido"
-}]
-
-
-/* Arreglos
- */
-
-let Micnick ={
-    ranking:1,
-    nombre:" Kevin Micnick",
-    hack:11830,
-    pais:"E.e U.u",
-    premios:17,
-    hackRealizados:[" Microcorp Systems","Digital Equipment Corporation (DEC"],
-    arrestos:[1981,1982,1987],
-    activo:true,
-    EstadoDeHack:["Sigue hackeando xD"," Microcorp Systems","Digital Equipment Corporation (DEC"],
-    nickName:["fantasma de los cables"]
-
+if(resultado.list.indexOf(dato[column] == -1)){ 
+resultado.list.push(dato[column]);  /*Y WALA IMPRIME LOS 4 DATOS */ 
+resultado[dato[column]] ={};
+resultado[dato[column]][agrupador] = 0;
+}
+resultado[dato[column]][agrupador] += dato[agrupador]
 } 
+
+console.log(resultado)
+
+/*VOY A CREAR UNA VARIABLE*/
+let prueba =["Leon del hack",
+"Lobo",
+"Aprendiz del hack",
+"Primeros pasos del hack"
+]
+
+console.log("resultado indexOf", prueba.indexOf("Lobo"))/*APARECE -1 XQ NO LO ENCUENTRA*/
