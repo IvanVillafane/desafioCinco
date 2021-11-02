@@ -11,7 +11,7 @@
 }
 
 .item-image {
-  height: 300px;
+  height: 100px;
   width: 100%;
 }
 
@@ -26,9 +26,8 @@
   margin: 0;
 }
 
-/* ? SHOPPING CART */
 .shopping-cart-items {
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .shopping-cart-header {
@@ -36,12 +35,12 @@
 }
 
 .shopping-cart-image {
-  max-width: 80px;
-  border-radius: 20px;
+  max-width: 60px;
+  border-radius: 10px;
 }
 
 .shopping-cart-quantity-input {
-  max-width: 45px;
+  max-width: 35px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background: #eee;
@@ -49,5 +48,5 @@
 }
 
 .shopping-cart-total {
-  min-height: 96px;
+  min-height: 80px;
 }
