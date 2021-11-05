@@ -14,34 +14,37 @@
 body {
     font-family: 'Roboto';
     background: #4568DC;
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-    background: linear-gradient(to right, #B06AB3, #4568DC);
-    height: 750px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: url(../img/form.jpg) no-repeat center center fixed;    
+    justify-content: end;
+    padding: 40px 40px 40px;
 }
 
 h1{
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 form{
+    margin-top: 30px;
     background: #fff;
-    padding: 40px 0;
+    margin-top: 20px;
+    align-content: center;
+    padding: 10px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 }
 
 .form{
-    width: 100%;
+    width: 60%;
     margin: auto;
 }
 
 form .grupo{
     position: relative;
-    margin: 45px ;
+    margin: 25px ;
+    height: 50px;
 }
 
 input{
@@ -76,7 +79,7 @@ input:focus~label,
 input:valid~label{
     top: -14px;
     font-size: 12px;
-    color: #2196f3;
+    color: #fc06ef;
 }
 
 .barra{
@@ -129,3 +132,158 @@ button{
     }
 }
 
+/*DESDE ACA MODIFICO*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  
+  .logo{
+    fill:  greenyellow !important; ;
+    width: auto;
+    height: 30px;  
+    color: rgb(177, 255, 20);
+  }
+ 
+
+  nav{
+      display: flex;
+      align-items:center;
+      justify-content: space-around;
+      min-height:8vh;
+      background-color: 04395E;
+  }
+
+  .ham{
+    display:none;
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+    margin:0;
+    padding:0;
+    }
+    
+    .ham span{
+        background-color: #f3f3f3;
+        display:block;
+        height:3px;
+        width: 28px;
+        margin:10px auto;
+        border-radius:2px;    
+    }
+  .enlaces-menu{
+      display:flex;
+      padding:0;
+  }
+  .enlaces-menu li{
+      padding: 0 40px;
+      list-style-type: none;
+      transition: 0.3s;
+  }
+
+  .enlaces-menu li a{
+      text-decoration:none;
+      font-size: 1.8rem;
+      color:#f3f3f3;
+      font-weight:600;
+  }
+  .enlaces-menu li:hover{
+      background-color:rgb(255, 1, 255);
+  }
+
+
+/* DISPOSITIVOS MOVILES */
+
+  @media (max-width:768px) {
+    body{
+      overflow:hidden;
+    }
+      .ham{
+          display:block;
+          cursor:pointer;
+          position: absolute; 
+          top:15px;
+          right:25px;
+          transition: 0.2s  0.1s; 
+  
+      }
+   
+      
+      nav{
+          flex-direction:column;
+          align-items: flex-start;
+          padding-top: 25px;
+          padding-bottom: 25px;
+      }
+
+      .logo{
+        padding-left:25px;
+        
+      }
+
+      .enlaces-menu{
+        
+          flex-direction:column;
+          justify-content: space-around;
+          align-items:center;
+          height: 92vh;         
+          margin:0;
+          padding:0; 
+          display:none;
+          opacity:0;
+          transition: opacity 5s ease-out;
+          width:100%;
+      
+         
+      }
+      .enlaces-menu li{
+        text-align:center;
+        width:100%;
+        padding:20px;    
+    }
+  
+}
+
+/* Animaciones */
+  
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .enlaces-menu.activado{
+      display:flex; 
+      animation: muestraMenu 350ms ease-in-out both;
+  }
+
+  .br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+  }
+  
+  .br-2.animado{
+    opacity: 0;
+  }
+  .br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+  }
+
+ .ham.girar:hover{
+     transform:rotate(360deg);
+ }
+
+ nav .logo{
+
+    padding: 5px;
+    color:#5CF64A;
+    font-size: 50px;
+}
+ 

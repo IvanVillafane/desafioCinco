@@ -3,9 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.navbar {
- margin: -2.3em 0 7em; 
-}
+
 h2 {
   text-align: center;
 }
@@ -21,7 +19,7 @@ form {
   text-align: center;
   width: 80%;
   height: 70%;
-  background-color: #080808;
+  background-color: #0eee6b;
   padding: 30px;
   color: #fff;
   border-radius: 25px;

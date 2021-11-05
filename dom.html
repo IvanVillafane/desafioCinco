@@ -8,41 +8,29 @@
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="./css/estilos.css">    
+    <link rel="stylesheet" href="./css/dom.css">    
 </head>
 <body>
     <div id="particles-js"></div>
     <header class="contenedor header">
-
-        <!-- Barra de navegación -->
-        <nav class="barra-navegacion">
-            <ul>
-                <li><a href="#">DOM</a></li>
-                <li><a href="#">Aplicaciones</a></li>
-                <li>
-                    <a href="#" class="logo">
-                        <i class="fas fa-biohazard"></i>
-                    </a>
-                </li>
-                <li><a href="./calculador.html">Calculador</a></li>
-                <li><a href="./array.html">Ver más</a></li>
+        <nav>
+            <div class="icon">
+                <a href="./index.html" class="logo img-fluid">
+              <i class="fas fa-biohazard"></i></a></div>      
+            <ul class="enlaces-menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./tiendas.html">Tienda</a></li>
+                <li><a href="./dom.html">Dom</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+            <button class="ham" type="button">   
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>                       
+        </nav>   
 
-        <!-- Título y descripción -->
-        <div class="contenido-descripcion">
-            <div>
-                <h1 class="titulo">
-                    <span>Ethical</span>
-                    <span>Hacking</span>
-                </h1>
-                <article class="descripcion">
-                    
-                    
-                    <a href="#" class="btn-link">Convierteté en UNO</a>
-                </article>
-            </div>
-        </div>
+       
         <div>
 <!--             <h2>Los hacker mas buscados</h2>  ESTO LO AGREGO DESDE JS-->  <!--           <ul>
                 <li>Elliott Gunton: la juventud en rebelión</li>
@@ -56,11 +44,11 @@
             </ul> -->
             <br>
         </div>
-            <h2>Aparece lista DOM</h2>
+    </header>
+            <h1 class="bold white w-30">Aparece lista DOM</h1>
             <h4 class="probando"></h4>
             <ul id="lista">  
             </ul>
-    </header>
 
     <!-- JS Particles.js -->
     <script src="./js/particles.min.js"></script>    
