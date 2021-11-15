@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOM CON JAVASCRIPT</title>
+    <title>Tabla jquery</title>
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">	         
+      
+	<link rel="stylesheet" href="estilos.css">
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
     <!-- Estilos CSS -->
@@ -13,6 +16,7 @@
 <body>
     <div id="particles-js"></div>
     <header class="contenedor header">
+
         <nav>
             <div class="icon">
                 <a href="./index.html" class="logo img-fluid">
@@ -23,12 +27,26 @@
                 <li><a href="./dom.html">Dom</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-            <button class="ham" type="button">   
-                <span class="br-1"></span>
-                <span class="br-2"></span>
-                <span class="br-3"></span>
             </button>                       
         </nav>   
+    </header>
+        <main>
+            <hr>
+            <h2 class="text-center text-light bold ">Borra los ej e inscribe a tus amigos<span class="badge badge-success"> Los contactaremos</span></h2> 
+
+            <section>
+                <div style="height: 50px;"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">                             
+                         <table id="myTable" class="table table-dark"></table>                
+                        </div>                                        
+                    </div>                  
+                </div>
+                  
+            </section>
+
+        </main>
 
        
         <div>
@@ -44,11 +62,7 @@
             </ul> -->
             <br>
         </div>
-    </header>
-            <h1 class="bold white w-30">Aparece lista DOM</h1>
-            <h4 class="probando"></h4>
-            <ul id="lista">  
-            </ul>
+         
 
     <!-- JS Particles.js -->
     <script src="./js/particles.min.js"></script>    
@@ -57,5 +71,13 @@
     
     <!-- JS FontAwesome -->
     <script src="https://kit.fontawesome.com/a2e8d0339c.js"></script>
+    <script src="jquery/jquery-3.3.1.min.js"></script>	 	
+    <script src="popper/popper.min.js"></script>	 	 	
+    <script src="bootstrap4/js/bootstrap.min.js"></script>   
+      
+    <!--  Plugin tabla -->
+    <script src="plugins/dynamicTable/jquery.dynamicTable-1.0.0.js"></script>
+		
+    <script src="codigo.js"></script> 
 </body>
 </html>
