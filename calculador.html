@@ -1,56 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculador de Estudi fuera de Arg</title>
-    <link rel="stylesheet" href="css/stylescalculador.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <!--JavaScript no Jv xD -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  </head>
-  <body><header>
-    <nav class="navbar blue z-depth-4">
-      <h2>Calculemos tùs estudios Hack fuera de Arg!!!</h2>
-    </nav></header>
-<section>
-    <div class="main">
-      <form id="vacacionesCalc">
-        <input type="text" placeholder="Destino" id="destino" required />
-        <input type="number" placeholder="Presupuesto" id="presupuesto" required />
-        <input type="number" placeholder="Alojamiento" id="alojamiento"  required
-        />
-        <input type="number" placeholder="Transporte " id="transporte" required />
-        <input type="number" placeholder="Comida" id="comida" required />
-        <input type="submit" value="Calculate" class="btn blue z-depth-4" />
-      </form>
-    </div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guía Para ser Hacker</title>
+<!--     /**aplico jQuery**/
+ -->    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-    <div class="container">
-      <div class="icons">
-        <h5><i class="fas fa-plane"></i></h5>
-        <h5><i class="fas fa-wallet"></i></h5> 
-        <h5><i class="fas fa-money-bill-wave-alt"></i></h5>  
-      </div>
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">	         
       
-      <div class="data">
-        <div class="resultado" id="resultado"></div>
-      </div>
-    </div>
-  </section>
+	<link rel="stylesheet" href="estilos.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/dom.css">    
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header class="contenedor header">
 
+        <nav>
+            <div class="icon">
+                <a href="./index.html" class="logo img-fluid">
+              <i class="fas fa-biohazard"></i></a></div>      
+            <ul class="enlaces-menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./tiendas.html">Tienda</a></li>
+                <li><a href="./dom.html">Dom</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+            </button>                       
+        </nav>   
+    </header>
+        <main>
+            <hr>
+  
+            <section>
+              <div>
+                <h1 class="text-center bold">Cómo ser hacker desde cero. Guía completa, consejos y recursos para principiantes
+                </h1>
+<!--                 <img class="vh-50"src="./img/guiaUno.jpg" >
+ -->                </div>
+                
+             <button class="button">Clickeame!!!</button>
+             <p>
+              En esta guía de hacking para dummies –o de iniciación al hacking– encontrarás consejos, documentación, cursos de hacking ético, webs especializadas en trucos de hacker, canales de Youtube y libros para aprender a hackear desde cero. Y como bonus, te damos un listado de los hackers más famosos del mundo, para que te sirvan de guía e inspiración…Congratulations Hackers 2022!
+             </p>
+            </section>
+            <div>
+              <button>botoncito 1</button>
+              <input type="text" value="One">
+            </div>
+             
+            <div>
+              <button>El dos</button>
+              <input type="text" value="Two">
+            </div>
+             
+            <div>
+              <button>Felicidades 3/3</button>
+              <input type="text" value="Three">
+            </div>
+             
+            <div id="msg"></div>
 
-    <script src="./js/particles.min.js"></script>    
-    <script src="js/scripts.js"></script>
-  </body>
+        </main>
+
+       
+        <div>
+          <footer>
+            <p>Lorem ipsum dolor sit amet consectetur.
+
+            </p>
+          </footer>
+<!--     
+         
+
+    <!-- JS Particles.js -->
+    <script>
+      $( "button" ).click(function() {
+        $( "p" ).slideToggle( "slow" );
+      });
+      </script>
+      <script>
+        $( "button" ).click(function() {
+          $( this ).parent().slideUp( "slow", function() {
+            $( "#msg" ).text( $( "button", this ).text() + " has completed." );
+          });
+        });
+        </script>
+
+    <!-- JS FontAwesome -->
+    <script src="https://kit.fontawesome.com/a2e8d0339c.js"></script>
+    <script src="jquery/jquery-3.3.1.min.js"></script>	 	
+		
+</body>
 </html>
