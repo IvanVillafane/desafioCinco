@@ -64,3 +64,13 @@ $(document).ready(function(){
 
     });	    
 });    
+
+
+      $( "button" ).click(function() {
+        $( "p" ).slideToggle( "slow" );
+      });
+        $( "button" ).click(function() {
+          $( this ).parent().slideUp( "slow", function() {
+            $( "#msg" ).text( $( "button", this ).text() + " has completed." );
+          });
+        });
